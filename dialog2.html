@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        padding: 15px;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .back-link {
+        text-decoration: none;
+        color: #666;
+      }
+      .content {
+        display: flex;
+        padding: 20px;
+      }
+      .image-container {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .image-placeholder {
+        background-color: #eee;
+        width: 100%;
+        padding-top: 100%; /* 1:1 aspect ratio */
+      }
+      .details {
+        flex: 1;
+      }
+      .product-name {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      .product-category {
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .price {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      .description {
+        margin-bottom: 20px;
+      }
+      .buttons {
+        display: flex;
+        gap: 10px;
+      }
+      .button {
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        background-color: white;
+        cursor: pointer;
+      }
+      .primary-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="#" class="back-link">← BACK TO ALL ITEMS</a>
+        <span>♡</span>
+      </div>
+      <div class="content">
+        <div class="image-container">
+          <div class="image-placeholder"></div>
+        </div>
+        <div class="details">
+          <h1 class="product-name">PRODUCT NAME</h1>
+          <p class="product-category">PRODUCT CATEGORY</p>
+          <p class="price">$XX</p>
+          <p class="description">
+            Product description goes here. This can be a few sentences long
+            describing the features and benefits of the product.
+          </p>
+          <div class="buttons">
+            <button class="button primary-button">ADD TO CART</button>
+            <button class="button">WISHLIST</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
